@@ -1,0 +1,22 @@
+#include<iostream>
+
+using namespace std;
+#define ROW 3
+#define column 3
+int i , j ;
+int main() {
+    
+    int matrix [ROW] [column]={{1 , 2 , 3} ,
+                               {4, 5 , 6} ,
+                               {7, 8, 9 } };
+                             
+           for(i=0 ; i<ROW ; i++){
+               for (j=0 ; j<column ;  j++)
+               
+               cout<< matrix[i][j];
+               
+               cout<<"\n";
+           }
+           
+return 0;
+}
