@@ -1,0 +1,30 @@
+#include<iostream>
+
+using namespace std;
+int main() {
+    char i;
+    
+    
+ //   for ( i='A'; i<= 'Z' ;i++){
+   //     cout<<i <<"\n";
+    //}
+    i='A';
+    while(i<='z') 
+    {
+        cout<<i <<"\t";
+          i++;
+    }
+    cout<<"\n";
+    
+ i='A';
+    do {
+        cout<<i;
+        
+        i++;
+    }
+    
+    while(i<='Z');
+  
+    
+    return 0;
+}
