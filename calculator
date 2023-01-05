@@ -1,0 +1,74 @@
+#include <iostream>
+using namespace std;
+ int add (int x , int y) ;
+  int mul(int x , int y);
+   int sub (int x , int y);
+    int division (int x , int y) ;
+    
+int main() {
+    int choice =0 ;
+    int x=0 , y =0;
+    
+    cout<<"1)add \n 2)sub \n 3)mul \n 4)div \n 5)exit " <<"Enter your choice " ;
+    cin>>choice;
+    
+    cout<<"enter two numbers " ;
+    cin>> x >>y ;
+    
+    switch (choice)
+    { case 1: cout<<"addition of x and y is " <<add(x , y);
+    break;
+    
+    case 2: cout <<"subtraction of x and y is " <<sub(x , y);
+    break;
+    
+    
+    case 3: cout <<"multiplication of x and y is " <<mul(x , y);
+    break;
+    
+    
+   case 4: cout <<"division of x and y is " <<division(x , y);
+    break;
+    
+  //  case 5 : cout<<exit(0);
+    
+     
+
+    return 0; 
+    }
+}
+    
+    
+        int add (int x , int y) {
+            return (x+y);
+        }
+        
+        
+        int sub (int x , int y) {
+            return (x-y);
+        }
+        
+        
+     int division (int x , int y) {
+            return (x/y);
+        }
+        
+        
+        int mul(int x , int y) {
+            return (x*y);
+        }
+        
+
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
