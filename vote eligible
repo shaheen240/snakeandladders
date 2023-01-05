@@ -1,0 +1,20 @@
+//program to identitify whether a person is eligible or no to vote;
+#include<iostream>
+using namespace std;
+int main() {
+    int age;
+    
+    cout<<"enter age of the candidate";
+    cin>>age;
+    
+    if(age>=18) {
+        cout<<"The person is   "  <<age    <<" eligible to vote";
+    }
+    
+    else {
+        cout<<"Not eligible to vote as the person is below" <<age ;
+        
+    }
+    
+    return 0;
+}
