@@ -8,3 +8,19 @@ int main() {
     cout<<"the length of string " << txt.length();
     return 0;
 }
+
+
+part 2
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+   
+  char str[5] = "ABCE";
+
+   cout << str[0]; //the string index starts with 0 so it will display only tht alphabet at position 0 so A ans;
+   cout << str; //will display the whole string which is ABCE
+    //the output displayed of this following is AABCE done;
+    return 0;
+}
