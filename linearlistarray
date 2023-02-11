@@ -1,0 +1,35 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int a[10];
+    int key ;
+    
+    for(int i=0;i<10;i++){
+        cin>>a[i];
+    }
+    
+    cout<<"enter the value u want to search" <<endl ;
+    cin>>key;
+    
+    int ans=-1;
+    
+    for(int i=0;i<10;i++){
+        if(a[i]==key){
+        ans = i;
+        break;
+    }
+    }
+    
+    if (ans==-1) {
+        cout<<"error!! Key not found";
+    }
+    
+    else {
+        cout<<"ans" <<ans <<endl;
+    }
+    
+    return 0;
+}
