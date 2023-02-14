@@ -1,0 +1,42 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+void swap(int &x, int &y){
+//& has played important role here when the values of a and b are swapped here u just call the swap fun in main and it will do the required changes
+    int temp;
+    temp=x;
+    x=y;
+    y=temp;
+    
+
+}
+
+int main() {
+    int a =100;
+    int b=200 ;
+    cout<<"the value of a is " <<a <<endl;
+    cout<<"the value of b is " <<b <<endl;
+    swap(a , b)//here we have used & so the values are swapped without writing cout in the void function ;
+    
+     cout<<"after swap the value of a is " <<a <<endl;
+    cout<<" after swap the value of b is " <<b <<endl;
+    
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
