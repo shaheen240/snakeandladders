@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+void swap(int x, int y){
+    int temp;
+    temp=x;
+    x=y;
+    y=temp;
+    cout<<" after the value of a is "<<x <<endl;
+    cout<<" after the value of b is  "<<y;
+    return ;
+    
+
+}
+
+int main() {
+    int a =100;
+    int b=200 ;
+    cout<<"the value of a is " <<a <<endl;
+    cout<<"the value of b is " <<b <<endl;
+    
+    swap(a , b) ;//swap is function which we had declared before so we are calling it now here
+    
+      
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
