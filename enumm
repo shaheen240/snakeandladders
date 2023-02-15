@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std ;
+enum week {mon , tue , wed , fri };
+
+int main() {
+
+week day ;
+day =fri ;
+cout<<"which no is the  friday"  <<"in the week "<<day;
+}
