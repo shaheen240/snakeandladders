@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std ;
+int  main (){
+    bool prime_no=true;
+    int n , i ;
+    
+    cout<<"Enter any postive no";
+    cin>>n;
+    
+    if (n==0 || n==1) {
+        prime_no=false;
+    }
+    
+    for(i=2 ; i<=n/2 ; i++) {
+        if(n%i==0){
+          prime_no=false;
+          
+        }
+    }
+    
+    if (prime_no==true){
+        cout<<n <<"is a prime no";
+    }
+    else {
+        cout<<"not a prime no";
+    }
+    
+    return 0;
+}
