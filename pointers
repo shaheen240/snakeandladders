@@ -1,0 +1,26 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x=10;
+    cout<<&x <<endl;
+    int y1=20;
+    cout<<&y1 <<endl;
+    float y =10.5;
+    cout<<&y;
+    
+    char ch  = 'A';
+    cout<<&ch <<endl;
+    cout<<(void *)&ch <<endl;
+    
+    int  * xptr;
+    
+    xptr=&y1;
+    cout<<xptr <<endl;
+    cout<<&xptr <<endl;
+    cout<<&y1 <<endl;
+    cout<<xptr;
+
+    return 0;
+}
