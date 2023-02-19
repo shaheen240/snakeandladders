@@ -1,0 +1,33 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+
+  class vehicle {
+    public :
+      int noofwheels=4;
+      char regno [10]="34Ed";
+      
+  };
+  
+  class car : public vehicle 
+  {
+      public :
+       char color[10]= "blue";
+       char name [5]= "red";
+  } ;
+  
+  
+  int main (){
+      car c1;
+      cout<<"color of the  the car is "<<c1.color <<endl;
+       cout<<"color of the  the car is "<<c1.noofwheels <<endl;
+        cout<<"color of the  the car is "<<c1.regno <<endl;
+         cout<<"color of the  the car is "<<c1.color;
+ 
+
+  
+
+  
+  return 0;
+}
