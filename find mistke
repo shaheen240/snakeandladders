@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+class vehicle {
+   protected :
+   int noofwheels=5;
+    char regno[10]="sf56";
+};
+
+
+class  car :  {
+   protected:
+    char color[10]="pink";
+    char name[5]="audi";
+};
+
+class  audi  :  public vehicle  , public car
+{
+   private :
+    int noofglasses =4;
+    
+    public :
+        displaydata(){
+            cout <<"the car no is "  <<regno ;
+              cout <<"the car color is "  <<color ;
+                cout <<"the car name is "  <<name ;
+                 cout <<"the car noofwheels  are "<<noofwheels;
+             
+              
+    
+};
+ main(){
+    audi a;
+     
+     a.displaydata();
+     return 0;
+}
+
+
+
+
+
+
+
