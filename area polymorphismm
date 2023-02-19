@@ -1,0 +1,63 @@
+//to find the area of rec , tri , square ;
+#include<iostream>
+using namespace std;
+int sarea(int s);
+int rarea (int l , int w);
+int area(int b , int h );
+int carea(int r) ;
+int main(){
+    int choice;
+   cout<<"\n 1.square \n2.rectangle \n3.triangle \n4 circle\n";
+   int s , l , w , b, h , r;
+   cin>>choice;
+   
+    switch(choice) {
+        case 1:cout<<"enter the side\n";
+               cin>>s;
+               cout<<"The area of Square is " <<sarea(s);
+               break;
+               
+           case 2:cout<<"enter the length and width\n";
+                 cin>>l>>w;
+             cout<<"The area of rectangle  is " <<rarea(l, w);
+                 break;    
+                 
+             case 3:cout<<"enter the breadth  and height\n";
+                 cin>>b>>h;
+            cout<<"The area of Triangle is " <<area(b , h);
+                 break;
+            case 4:cout<<"enter the radius \n";
+                 cin>>r;
+                 cout<<"The area of circle is " <<carea(r);
+                 break;
+              case 5:exit(0);
+                 //break;
+                 
+                 deafault :cout<<"invalid choice";
+                 
+        
+    }
+    return 0;
+}
+
+int sarea(int s){
+int a =s*s;
+return a;}
+
+int rarea (int l,int w) {
+    int a =l*w;
+    return a;
+}
+
+int area (int b,int h) {
+    int a =0.5 * b *h ;
+    return a;
+}
+
+int carea(int r) {
+    int a = 3.14 * r * r ;
+    return a ;
+}
+
+
+
