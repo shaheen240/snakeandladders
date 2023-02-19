@@ -8,7 +8,7 @@ class vehicle {
 };
 
 
-class  car :  {
+class  car{
    protected:
     char color[10]="pink";
     char name[5]="audi";
@@ -16,23 +16,24 @@ class  car :  {
 
 class  audi  :  public vehicle  , public car
 {
-   private :
-    int noofglasses =4;
+  public :
+       char noofglasses [10] = "EDG";
     
-    public :
-        displaydata(){
-            cout <<"the car no is "  <<regno ;
-              cout <<"the car color is "  <<color ;
-                cout <<"the car name is "  <<name ;
-                 cout <<"the car noofwheels  are "<<noofwheels;
-             
+   
+       void displaydata()
+        {
+            cout <<"\nthe car no is "  <<regno ;
+              cout <<"\nthe car color is "  <<color ;
+                cout <<"\nthe car name is "  <<name ;
+                 cout <<"\nthe car noofwheels  are "<<noofwheels;
+        };
               
     
 };
- main(){
+ int main(){
     audi a;
      
-     a.displaydata();
+    a.displaydata();
      return 0;
 }
 
