@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int num ,temp , rev , sum=0;
+    
+    cout<<"Enter the no whose palindrome you want to check\n";
+    cin>>num;
+    temp=num;
+    
+    while(num>0) {
+        rev=num%10;
+        sum=sum*10+rev;
+        num/=10;
+    }
+    if(temp==sum) {
+        cout<<" isss  aa  a a  a palindrome";
+    }
+    else {
+        cout<<"not a palindrome";
+    }
+    
+    return 0 ;
+}
