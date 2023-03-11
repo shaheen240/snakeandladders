@@ -1,0 +1,35 @@
+#include<iostream>
+#include <cctype>
+#include<stdio.h>
+
+using namespace std;
+
+int main() {
+    string a;
+    
+    int count=0;
+    
+    cout<<"enter a letter to check vowel";
+    cin>>a;
+    for(int i= a.length()-1  ; i>0 ; i-- ) {
+    
+    if(a=='A'|| a=='E' || a=='I' || a=='O' || a=='U' ){
+        cout<<"Vowel is there" <<endl;
+        count++;
+    } 
+    else if (a=='a' || a=='e' || a=='i' || a=='O' || a=='u') {
+        cout<<"Vowel is presnt in" <<a  <<endl;
+        count++;
+    }
+    
+    else if(a!='a'){
+        cout<<"no vowel ";
+    }
+    }
+    
+    
+    return 0;
+    
+}
+
+
